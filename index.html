@@ -79,7 +79,7 @@ body{font-family:Inter,"SF Pro Display","Helvetica Neue",Arial,sans-serif}
 @media(max-width:980px){.app-shell{grid-template-columns:220px 1fr}.topbar{align-items:flex-start}.top-actions{flex-wrap:wrap;justify-content:flex-end}.dashboard-grid,.two-column,.prep-grid,.live-grid,.review-grid{grid-template-columns:1fr}.side-stack,.live-cues{grid-template-columns:1fr 1fr}.prelive-banner{grid-template-columns:1fr auto}.prelive-banner .primary-button{grid-column:1/-1}}
 @media(max-width:760px){.app-shell{display:block}.journey-grid,.metric-grid,.quick-actions{grid-template-columns:1fr}.side-stack,.live-cues{grid-template-columns:1fr}.page-lead,.creator-growth-head,.review-summary{align-items:flex-start;gap:16px;flex-direction:column}.next-action{grid-template-columns:48px minmax(0,1fr)}.next-action .primary-button{grid-column:2;width:max-content}.training-main{grid-template-columns:64px minmax(0,1fr)}.agent-actions{display:grid;grid-template-columns:1fr}.agent-actions button{width:100%}.timeline-list>div{grid-template-columns:42px 26px minmax(0,1fr) auto}.timeline-list strong{display:none}.asset-tabs{max-width:100%}}
 
-/* Four-language switcher */
+/* Five-language switcher */
 .language-picker{height:44px;display:flex;align-items:center;gap:8px;padding:0 9px 0 11px;border:1px solid #e1deef;border-radius:10px;color:#7c8492;background:#fff}.language-picker>span{font-size:10px;font-weight:750;letter-spacing:.04em;text-transform:uppercase}.language-picker select{min-width:86px;border:0;outline:0;color:#5143a9;background:transparent;font-size:12px;font-weight:750;cursor:pointer}.language-picker:focus-within{border-color:#9e91eb;box-shadow:0 0 0 3px rgba(111,92,218,.1)}
 html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}html[lang="ja"] body{font-family:Inter,"Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,sans-serif}html[lang="ko"] body{font-family:Inter,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}html[lang="zh-CN"] .view-page p,html[lang="ja"] .view-page p,html[lang="ko"] .view-page p{line-height:1.75}html[lang="zh-CN"] .agent-message h2,html[lang="ja"] .agent-message h2,html[lang="ko"] .agent-message h2{letter-spacing:-.03em}html[lang="zh-CN"] .nav-item,html[lang="ja"] .nav-item,html[lang="ko"] .nav-item{font-weight:700}
 @media(max-width:1180px){.language-picker>span{display:none}.language-picker select{min-width:78px}}
@@ -103,6 +103,18 @@ html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto 
 .community-backdrop{z-index:70}.community-modal{width:min(720px,100%);padding:32px;background:radial-gradient(circle at 100% 0,rgba(116,95,220,.11),transparent 34%),#fff}.community-modal-hero{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:18px;padding-right:40px}.community-modal-mark{width:60px;height:60px;border-radius:18px;font-size:18px}.community-modal-hero h2{margin:4px 0 7px;font-size:25px}.community-modal-hero p{margin:0;color:#7c8593;font-size:12px;line-height:1.65}.community-support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0 15px}.community-support-grid article{min-height:155px;padding:16px;border:1px solid #e3e7e8;border-radius:14px;background:rgba(250,252,252,.9)}.community-support-grid article>span{display:grid;place-items:center;width:28px;height:28px;margin-bottom:15px;border-radius:9px;color:#368f73;background:#e1f6ef;font-size:10px;font-weight:850}.community-support-grid strong,.community-support-grid small{display:block}.community-support-grid strong{color:#38414e;font-size:13px}.community-support-grid small{margin-top:7px;color:#818a97;font-size:10px;line-height:1.55}.community-trust{display:flex;justify-content:space-between;gap:14px;padding:11px 13px;border-radius:10px;color:#6f7885;background:#f4f6f7;font-size:10px}.community-trust span:first-child{color:#347f69;font-weight:750}.community-trust i{display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%;background:#45bb94}.community-success{display:none;margin-top:13px;padding:12px 14px;border:1px solid #bce7d7;border-radius:11px;color:#317d65;background:#edf9f5}.community-success.show{display:grid;gap:3px}.community-success strong{font-size:12px}.community-success span{font-size:10px;line-height:1.5}.community-modal .modal-actions{margin-top:19px}.community-modal #communityJoinButton:disabled{cursor:default;color:#287b63;background:#dff4ed;box-shadow:none}
 @media(max-width:1180px){.community-entry-button{order:2}.voice-entry-button{order:3}.top-actions{max-width:560px}.community-entry-button,.voice-entry-button{flex:0 0 auto}}
 @media(max-width:760px){.community-entry-button{width:42px;padding:0}.community-entry-button>span{margin:0}.community-entry-button{font-size:0}.community-chat-entry{grid-template-columns:34px minmax(0,1fr);padding:10px 14px}.community-chat-entry button{grid-column:2;width:max-content}.community-chat-entry small{line-height:1.4}.community-support-grid{grid-template-columns:1fr}.community-support-grid article{min-height:0}.community-modal{padding:26px 18px}.community-modal-hero{grid-template-columns:48px minmax(0,1fr);gap:13px;padding-right:26px}.community-modal-mark{width:46px;height:46px;border-radius:14px;font-size:14px}.community-modal-hero h2{font-size:20px}.community-trust{align-items:flex-start;flex-direction:column}.community-modal .modal-actions{display:grid;grid-template-columns:1fr 1.3fr}}
+
+/* Live glance mode: minimal information, maximum readability */
+.workspace:has(#live.active-view){padding-top:20px}.workspace:has(#live.active-view) .topbar{margin-bottom:14px}.workspace:has(#live.active-view) .topbar>div:first-child p{display:none}.workspace:has(#live.active-view) .topbar h1{font-size:23px}
+#live{max-width:1280px;margin:0 auto}.glance-livebar{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px;padding:13px 18px;margin-bottom:14px;border-radius:17px;color:#fff;background:#27283a}.glance-live-state{display:flex;align-items:center;gap:12px}.glance-live-state strong{font-size:20px;letter-spacing:.08em}.glance-live-state time{color:#d4d5df;font:650 20px/1 monospace}.glance-signals{display:flex;align-items:center;justify-content:center;gap:28px;color:#c8cad5;font-size:15px}.glance-signals span{white-space:nowrap}.glance-signals b{margin-right:5px;color:#fff;font-size:20px}.glance-livebar>button{height:38px;padding:0 14px;border:1px solid #ffffff24;border-radius:10px;color:#fff;background:#ffffff0a;font-size:12px;font-weight:750}
+.glance-stage{padding:24px 28px 26px;border-radius:24px;background:radial-gradient(circle at 95% 0,rgba(124,101,224,.34),transparent 35%),linear-gradient(145deg,#28293d,#38364d)}.glance-stage-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px}.glance-stage .current-segment{display:grid;grid-template-columns:60px minmax(0,1fr);align-items:center;gap:18px;margin:0}.glance-stage .segment-index{font-size:40px}.glance-stage .current-segment small{color:#aaaabd;font-size:12px;font-weight:750;letter-spacing:.05em}.glance-stage .current-segment h2{margin:4px 0 2px;font-size:32px;line-height:1.15}.glance-stage .current-segment p{margin:0;color:#bfc0cd;font-size:14px}.glance-stage .segment-time strong{font-size:34px}.glance-stage .segment-time small{margin-top:4px;color:#aaaabd;font-size:11px;font-weight:800;letter-spacing:.08em}.glance-stage .segment-progress{margin-top:17px;height:7px}
+.glance-cue{display:block;margin:22px 0 18px;padding:28px 30px 30px;border:1px solid rgba(199,190,255,.17);border-radius:20px;background:linear-gradient(135deg,rgba(116,96,220,.26),rgba(255,255,255,.055))}.glance-cue-label{display:flex;align-items:center;justify-content:space-between;gap:20px}.glance-cue-label>span{display:flex;align-items:center;color:#c9c2f8;font-size:12px;font-weight:850;letter-spacing:.08em}.glance-cue-label i{width:9px;height:9px;margin-right:8px;border-radius:50%;background:#5ce0b4;box-shadow:0 0 0 5px rgba(92,224,180,.11)}.glance-cue h3{max-width:1020px;margin:17px 0 10px;color:#fff;font-size:clamp(40px,4.2vw,64px)!important;line-height:1.08;letter-spacing:-.045em}.glance-cue p{margin:0;color:#e0deec;font-size:clamp(22px,2vw,30px)!important;line-height:1.38}.glance-cue .cue-done{height:38px;padding:0 13px;border:1px solid rgba(255,255,255,.2);border-radius:10px;color:#fff;background:rgba(255,255,255,.1);font-size:12px;font-weight:800}.glance-cue .cue-done.handled{color:#8ce6c8;border-color:rgba(92,224,180,.36);opacity:1}
+.glance-rail{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(310px,.65fr);gap:12px}.glance-stage .next-up,.glance-risk{min-height:72px;display:grid;align-items:center;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.055)}.glance-stage .next-up{grid-template-columns:54px minmax(190px,1fr) auto auto;gap:13px;padding:12px 15px;border-top:1px solid rgba(255,255,255,.1)}.glance-stage .next-up>span,.glance-risk small{color:#9f98d2;font-size:10px;font-weight:850;letter-spacing:.08em}.glance-stage .next-up strong{color:#fff;font-size:17px}.glance-stage .next-up small{color:#b5b5c4;font-size:12px}.glance-stage .next-up button,.glance-risk button{border:0;color:#c7befb;background:transparent;font-size:12px;font-weight:750;white-space:nowrap}.glance-risk{grid-template-columns:38px minmax(0,1fr) auto;gap:12px;padding:12px 15px}.glance-risk>span{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;color:#ffd5c7;background:rgba(232,141,93,.2);font-size:18px;font-weight:900}.glance-risk small,.glance-risk strong{display:block}.glance-risk strong{margin-top:3px;color:#fff;font-size:15px;line-height:1.3}
+.glance-voice{display:grid;grid-template-columns:minmax(300px,.72fr) minmax(420px,1.28fr);grid-template-areas:"head guidance" "transcript guidance" "privacy guidance";gap:10px 20px;margin:14px 0;padding:20px 22px;border-radius:20px}.glance-voice .voice-coach-head{grid-area:head;align-items:flex-start}.glance-voice .voice-coach-head h2{max-width:440px;margin:3px 0 0;font-size:22px;line-height:1.25}.glance-voice .voice-control{align-items:flex-end;flex-direction:column;gap:8px}.glance-voice .voice-guidance{grid-area:guidance;min-height:150px;padding:22px 25px}.glance-voice .voice-guidance strong{margin:7px 0 5px;font-size:clamp(32px,3vw,46px);line-height:1.15}.glance-voice .voice-guidance p{font-size:14px}.glance-voice .voice-transcript-card{grid-area:transcript;min-height:0;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:10px;padding:9px 12px;border-radius:10px}.glance-voice .voice-transcript-card>span{color:#7b6fd0;font-size:9px;font-weight:850;letter-spacing:.08em}.glance-voice .voice-transcript-card>p{margin:0;overflow:hidden;color:#707886;font-size:11px;line-height:1.4;text-overflow:ellipsis;white-space:nowrap}.glance-voice .voice-privacy{grid-area:privacy;margin:0;font-size:9px}.glance-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.glance-actions button{min-height:54px;border:1px solid #e1deef;border-radius:13px;color:#5546b9;background:#fff;font-size:15px;font-weight:800}.glance-actions button span{margin-right:8px;font-size:18px}
+html[lang="id"] body{font-family:Inter,"Helvetica Neue",Arial,sans-serif}
+@media(max-width:1050px){.glance-rail{grid-template-columns:1fr}.glance-voice{grid-template-columns:1fr;grid-template-areas:"head" "guidance" "transcript" "privacy"}.glance-voice .voice-control{align-items:center;flex-direction:row}.glance-stage .next-up{grid-template-columns:54px minmax(170px,1fr) auto}.glance-stage .next-up small{display:none}}
+@media(max-width:760px){.workspace:has(#live.active-view) .topbar{display:none}#live{padding-top:4px}.glance-livebar{grid-template-columns:1fr auto;gap:10px;padding:11px 13px}.glance-signals{grid-column:1/-1;grid-row:2;justify-content:flex-start;gap:18px}.glance-livebar>button{grid-column:2;grid-row:1}.glance-stage{padding:18px 15px}.glance-stage-head{grid-template-columns:1fr auto}.glance-stage .current-segment{grid-template-columns:1fr}.glance-stage .segment-index,.glance-stage .current-segment p{display:none}.glance-stage .current-segment h2{font-size:25px}.glance-stage .segment-time strong{font-size:27px}.glance-cue{padding:22px 18px}.glance-cue-label{align-items:flex-start}.glance-cue-label>span{font-size:10px}.glance-cue h3{font-size:38px!important}.glance-cue p{font-size:22px!important}.glance-cue .cue-done{flex:0 0 auto;font-size:0}.glance-cue .cue-done:after{content:"✓";font-size:16px}.glance-stage .next-up{grid-template-columns:42px 1fr auto}.glance-stage .next-up strong{font-size:14px}.glance-risk{grid-template-columns:34px 1fr}.glance-risk button{grid-column:2;text-align:left}.glance-voice{padding:18px 15px}.glance-voice .voice-coach-head{display:block}.glance-voice .voice-control{justify-content:space-between;margin-top:13px}.glance-voice .voice-guidance strong{font-size:31px}.glance-actions{grid-template-columns:1fr}.glance-actions button{min-height:58px}}
+@media(prefers-reduced-motion:reduce){.glance-livebar .broadcast-dot{animation:none}}
 </style>
 </head>
 <body>
@@ -125,7 +137,7 @@ html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto 
     <section class="workspace">
       <header class="topbar">
         <div><p class="eyebrow" id="pageEyebrow">YOUR AI MANAGER · MONDAY, AUG 17</p><h1 id="pageTitle">James, I’ve got you today <span>✦</span></h1><p id="pageSubtitle">I reviewed your last 12 shows and prioritized what will move you forward today.</p></div>
-        <div class="top-actions"><label class="language-picker"><span>Language</span><select id="languageSelect" aria-label="Display language"><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ko">한국어</option></select></label><button class="soft-button community-entry-button" data-modal="community"><span>♣</span> Join Official Community</button><button class="soft-button voice-entry-button" data-go="live" data-voice-focus><span>🎙</span> Voice Copilot</button><button class="icon-button" id="globalSearchButton" aria-label="Search">⌕</button><button class="icon-button notice" id="noticeButton" aria-label="View notifications">◌<b>3</b></button><button class="primary-button" data-go="prelive">Start Pre-Show Prep <span>→</span></button></div>
+        <div class="top-actions"><label class="language-picker"><span>Language</span><select id="languageSelect" aria-label="Display language"><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="id">Bahasa Indonesia</option></select></label><button class="soft-button community-entry-button" data-modal="community"><span>♣</span> Join Official Community</button><button class="soft-button voice-entry-button" data-go="live" data-voice-focus><span>🎙</span> Voice Copilot</button><button class="icon-button" id="globalSearchButton" aria-label="Search">⌕</button><button class="icon-button notice" id="noticeButton" aria-label="View notifications">◌<b>3</b></button><button class="primary-button" data-go="prelive">Start Pre-Show Prep <span>→</span></button></div>
       </header>
 
       <section class="view-page active-view" id="agent">
@@ -203,19 +215,40 @@ html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto 
       </section>
 
       <section class="view-page" id="live">
-        <div class="live-strip"><div><span class="broadcast-dot"></span><strong>LIVE NOW</strong><small>00:37:42</small></div><div class="live-kpis"><span><b>1,284</b><small>Watching</small></span><span><b>16:42</b><small>Avg. Watch</small></span><span><b>7.9%</b><small>Engagement</small></span><span><b>+86</b><small>New Followers</small></span></div><button data-toast="End-of-show marker added">End Copilot</button></div>
-        <article class="voice-coach" id="voiceCoach">
-          <header class="voice-coach-head"><div><span class="section-kicker">STREAMONE AI · VOICE COACH</span><h2>Real-Time Voice Copilot</h2><p>I listen to your delivery and surface the one adjustment that matters most—large enough to read at a glance.</p></div><div class="voice-control"><span class="voice-status" id="voiceStatus"><i></i><b>OFF</b></span><button class="primary-button" id="voiceToggle" type="button"><span>🎙</span> Start Listening</button></div></header>
-          <div class="voice-coach-body">
-            <section class="voice-transcript-card"><div class="voice-card-label"><span>WHAT I JUST HEARD</span><div class="voice-levels" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><p id="voiceTranscript" aria-live="polite">Your live transcript will appear here once listening starts.</p></section>
-            <section class="voice-guidance"><span>ADJUST THIS NOW</span><strong id="voiceGuidance" aria-live="assertive">Ready when you are—start listening</strong><p id="voiceReason">During the show, this is the only line you need to glance at.</p></section>
-          </div>
-          <footer class="voice-privacy"><span>●</span> Your microphone is used only while listening is on. Recognition is provided by your browser.</footer>
-        </article>
-        <div class="live-grid"><article class="live-main-card"><div class="live-card-meta"><span>STREAMONE AI IS LIVE WITH YOU</span><em><i></i> MONITORING</em></div><div class="current-segment"><span class="segment-index">02</span><div><small>CURRENT SEGMENT · 8:18–8:38 PM</small><h2>Audience Requests</h2><p>“A Little Happiness” + live song requests</p></div><div class="segment-time"><strong>08:36</strong><small>EST. LEFT</small></div></div><div class="segment-progress"><i></i></div><div class="live-nudge"><span class="agent-avatar tiny"><b>AI</b></span><div><small>STREAMONE AI · NOW</small><h3>Pause the next song—welcome the new viewers first</h3><p>83 people joined in the last 90 seconds. Try: “If you just arrived, what kind of song matches your mood tonight?”</p></div><button class="primary-button cue-done">Use This Cue</button></div><div class="next-up"><span>NEXT</span><strong>8:38 PM · Shared Story</strong><small>8 minutes left · StreamOne will alert you 2 minutes early</small><button data-toast="Moved to the next segment early">Move Ahead →</button></div></article>
-          <aside class="live-cues"><article class="panel"><div class="panel-head"><div><h3>Live Decisions</h3><p>Ranked by urgency</p></div><span class="listening">● LIVE</span></div><div class="cue-item high"><time>NOW</time><div><b>New viewers are arriving—welcome them first</b><small>Use one easy, open-ended question</small></div><button class="cue-done">Use Cue</button></div><div class="cue-item"><time>2 MIN</time><div><b>“Song request” appeared 46 times</b><small>Participation intent is rising</small></div><button class="cue-done">Done</button></div><div class="cue-item warn"><time>5 MIN</time><div><b>Someone asked for private contact details</b><small>Ignore it and redirect the conversation</small></div><button class="cue-done">Got It</button></div></article><article class="panel sentiment-card"><div class="panel-head"><h3>Room Sentiment</h3><strong>82% POSITIVE</strong></div><div class="sentiment-bar"><i></i></div><div class="word-cloud"><b>A Little Happiness</b><span>love it</span><b>just joined</b><span>request</span><b>so warm</b><span>followed</span></div></article></aside>
+        <div class="glance-livebar">
+          <div class="glance-live-state"><span class="broadcast-dot"></span><strong>LIVE</strong><time>00:37:42</time></div>
+          <div class="glance-signals"><span><b>1,284</b> watching</span><span><b>82%</b> positive</span></div>
+          <button data-toast="End-of-show marker added">End Copilot</button>
         </div>
-        <div class="quick-actions"><button data-toast="Song requests are open">♫<span><b>Open Requests</b><small>Refresh prompt cards</small></span></button><button data-toast="PK reminder sent">⚔<span><b>Ping PK Partner</b><small>Contact Orange Soda</small></span></button><button data-toast="Highlight saved">◆<span><b>Mark Highlight</b><small>Save for post-show clips</small></span></button><button data-modal="risk">!<span><b>Safety Guide</b><small>Check boundaries fast</small></span></button></div>
+
+        <article class="live-main-card glance-stage">
+          <div class="glance-stage-head">
+            <div class="current-segment"><span class="segment-index">02</span><div><small>CURRENT · 8:18–8:38 PM</small><h2>Audience Requests</h2><p>“A Little Happiness” + live song requests</p></div></div>
+            <div class="segment-time"><strong>08:36</strong><small>LEFT</small></div>
+          </div>
+          <div class="segment-progress"><i></i></div>
+
+          <section class="live-nudge glance-cue" aria-label="StreamOne AI live cue">
+            <div class="glance-cue-label"><span><i></i> STREAMONE AI · DO THIS NOW</span><button class="cue-done">Cue Used ✓</button></div>
+            <h3>Welcome the new viewers first.</h3>
+            <p>Say: “If you just joined, what song matches your mood?”</p>
+          </section>
+
+          <div class="glance-rail">
+            <div class="next-up"><span>NEXT</span><strong>8:38 PM · Shared Story</strong><small>I’ll alert you 2 minutes early</small><button data-toast="Moved to the next segment early">Move Ahead →</button></div>
+            <div class="glance-risk"><span>!</span><div><small>SAFETY</small><strong>Ignore private-contact questions.</strong></div><button data-modal="risk">Open Guide</button></div>
+          </div>
+        </article>
+
+        <article class="voice-coach glance-voice" id="voiceCoach">
+          <header class="voice-coach-head"><div><span class="section-kicker">REAL-TIME VOICE COACH</span><h2>AI is listening for the next adjustment</h2></div><div class="voice-control"><span class="voice-status" id="voiceStatus"><i></i><b>OFF</b></span><button class="primary-button" id="voiceToggle" type="button"><span>🎙</span> Start Listening</button></div></header>
+          <section class="voice-guidance"><span>VOICE CUE</span><strong id="voiceGuidance" aria-live="assertive">Start listening when you go live.</strong><p id="voiceReason">One clear instruction will appear here.</p></section>
+          <div class="voice-transcript-card"><span>HEARD</span><p id="voiceTranscript" aria-live="polite">Waiting for your voice…</p></div>
+          <footer class="voice-privacy"><span>●</span> Microphone access is active only while listening.</footer>
+        </article>
+
+        <div class="glance-actions"><button data-toast="Highlight saved"><span>◆</span> Mark Highlight</button><button data-toast="Song requests are open"><span>♫</span> Open Requests</button><button data-modal="risk"><span>!</span> Safety Guide</button></div>
+        <div class="live-cues" hidden><article class="panel" id="liveDecisionList"></article></div>
       </section>
 
       <section class="view-page" id="review">
@@ -1197,16 +1230,174 @@ html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto 
     ["Official community access requested","官方社群入群申请已提交"]
   );
 
+  rows.push(
+    ["LIVE","ライブ配信中","라이브"],
+    ["watching","視聴中","시청 중"],
+    ["positive","ポジティブ","긍정적"],
+    ["CURRENT · 8:18–8:38 PM","現在 · 20:18〜20:38","현재 · 20:18–20:38"],
+    ["LEFT","残り","남음"],
+    ["StreamOne AI live cue","StreamOne AIのライブ提案","StreamOne AI 라이브 안내"],
+    ["STREAMONE AI · DO THIS NOW","STREAMONE AI · 今すぐこれを","STREAMONE AI · 지금 이렇게 하세요"],
+    ["Cue Used ✓","対応済み ✓","안내 사용 완료 ✓"],
+    ["Welcome the new viewers first.","まず新しい視聴者を歓迎しましょう。","새로 들어온 시청자에게 먼저 인사하세요."],
+    ["Say: “If you just joined, what song matches your mood?”","「今来た方、今の気分に合う曲は？」と聞いてみましょう。","“방금 들어오셨다면 지금 기분에 맞는 노래가 뭔가요?”라고 물어보세요."],
+    ["I’ll alert you 2 minutes early","2分前にお知らせします","2분 전에 알려드릴게요"],
+    ["SAFETY","安全","안전"],
+    ["Ignore private-contact questions.","個人連絡先の質問には答えないでください。","개인 연락처 질문에는 답하지 마세요."],
+    ["Open Guide","ガイドを開く","가이드 열기"],
+    ["REAL-TIME VOICE COACH","リアルタイム音声コーチ","실시간 음성 코치"],
+    ["AI is listening for the next adjustment","AIが次の調整ポイントを聞き取ります","AI가 다음 조정 포인트를 듣고 있어요"],
+    ["Start listening when you go live.","配信開始時に音声認識をオンにしてください。","방송을 시작할 때 음성 듣기를 켜세요."],
+    ["One clear instruction will appear here.","ここには明確な指示を1つだけ表示します。","여기에 명확한 안내 한 가지만 표시됩니다."],
+    ["VOICE CUE","音声アドバイス","음성 안내"],
+    ["HEARD","聞き取り","들은 내용"],
+    ["Waiting for your voice…","音声を待っています…","음성을 기다리는 중…"],
+    ["Microphone access is active only while listening.","音声認識中のみマイクを使用します。","듣기 중일 때만 마이크를 사용합니다."],
+    ["Mark Highlight","ハイライトを保存","하이라이트 표시"],
+    ["Open Requests","リクエストを受付","신청곡 열기"],
+    ["Safety Guide","安全ガイド","안전 가이드"]
+  );
+
+  zhRows.push(
+    ["LIVE","直播中"],
+    ["watching","人在看"],
+    ["positive","正向情绪"],
+    ["CURRENT · 8:18–8:38 PM","当前环节 · 20:18–20:38"],
+    ["LEFT","剩余"],
+    ["StreamOne AI live cue","StreamOne AI 实时提示"],
+    ["STREAMONE AI · DO THIS NOW","STREAMONE AI · 现在这样做"],
+    ["Cue Used ✓","已采用 ✓"],
+    ["Welcome the new viewers first.","先欢迎刚进来的新观众。"],
+    ["Say: “If you just joined, what song matches your mood?”","可以说：“刚进来的朋友，哪首歌最符合你现在的心情？”"],
+    ["I’ll alert you 2 minutes early","我会提前 2 分钟提醒"],
+    ["SAFETY","安全提醒"],
+    ["Ignore private-contact questions.","不要回应私人联系方式问题。"],
+    ["Open Guide","打开指引"],
+    ["REAL-TIME VOICE COACH","实时语音教练"],
+    ["AI is listening for the next adjustment","AI 正在听，并判断下一步怎么调"],
+    ["Start listening when you go live.","开播时打开监听。"],
+    ["One clear instruction will appear here.","这里每次只显示一条明确指令。"],
+    ["VOICE CUE","语音建议"],
+    ["HEARD","刚刚听到"],
+    ["Waiting for your voice…","等待你的声音…"],
+    ["Microphone access is active only while listening.","只在监听开启时使用麦克风。"],
+    ["Mark Highlight","标记高光"],
+    ["Open Requests","开放点歌"],
+    ["Safety Guide","安全指引"]
+  );
+
+  const idRows = [
+    ["StreamOne · Your Personal AI Manager","StreamOne · Manajer AI Pribadi Anda"],
+    ["Your personal AI manager","Manajer AI pribadi Anda"],
+    ["Language","Bahasa"],
+    ["Display language","Bahasa tampilan"],
+    ["Main navigation","Navigasi utama"],
+    ["AI Manager","Manajer AI"],
+    ["Home","Beranda"],
+    ["Creator Growth","Pengembangan Kreator"],
+    ["Pre-Show Plan","Rencana Pra-Siaran"],
+    ["Live Copilot","Kopilot Live"],
+    ["Post-Show Review","Ulasan Pasca-Siaran"],
+    ["Content Library","Pustaka Konten"],
+    ["This week’s growth","Perkembangan minggu ini"],
+    ["AI supported 3 live shows this week","AI mendampingi 3 siaran live minggu ini"],
+    ["Online · Prepping tonight’s show","Online · Menyiapkan siaran malam ini"],
+    ["YOUR AI MANAGER · MONDAY, AUG 17","MANAJER AI ANDA · SENIN, 17 AGUSTUS"],
+    ["James, I’ve got you today","James, hari ini aku mendampingimu"],
+    ["I reviewed your last 12 shows and prioritized what will move you forward today.","Saya meninjau 12 siaran terakhirmu dan memilih hal yang paling mendorong perkembanganmu hari ini."],
+    ["Voice Copilot","Kopilot Suara"],
+    ["Search","Cari"],
+    ["View notifications","Lihat notifikasi"],
+    ["Start Pre-Show Prep","Mulai Persiapan Siaran"],
+    ["AI monitoring live signals","AI memantau sinyal live secara real-time"],
+    ["Show · Audience · Strategy","Siaran · Penonton · Strategi"],
+    ["AI Manager Online","Manajer AI Online"],
+    ["Updated just now","Baru saja diperbarui"],
+    ["View Tonight’s Game Plan","Lihat Strategi Malam Ini"],
+    ["Chat with StreamOne AI","Ngobrol dengan StreamOne AI"],
+    ["Your always-on growth loop","Siklus perkembangan yang selalu aktif"],
+    ["Support that starts before you go live—and keeps working after the show ends.","Dukungan dimulai sebelum live dan terus bekerja setelah siaran selesai."],
+    ["What StreamOne recommends now","Rekomendasi StreamOne sekarang"],
+    ["Start Practice","Mulai Latihan"],
+    ["You’re building real momentum","Perkembanganmu semakin kuat"],
+    ["Get better—even when you’re offline","Terus berkembang meski sedang offline"],
+    ["Today’s Practice Plan","Rencana Latihan Hari Ini"],
+    ["Upgrade what viewers see and hear","Tingkatkan apa yang dilihat dan didengar penonton"],
+    ["Lighting","Pencahayaan"],
+    ["Live Delivery","Cara Berbicara Saat Live"],
+    ["Camera Makeup","Riasan Kamera"],
+    ["Background","Latar Belakang"],
+    ["Framing","Komposisi Kamera"],
+    ["Audio Quality","Kualitas Audio"],
+    ["Turn every small win into visible growth","Ubah setiap kemajuan kecil menjadi perkembangan nyata"],
+    ["View All Rewards →","Lihat Semua Hadiah →"],
+    ["Show Readiness","Kesiapan Siaran"],
+    ["Tonight’s show, sequenced by StreamOne","Susunan siaran malam ini dari StreamOne"],
+    ["Warm Welcome","Sapaan Pembuka"],
+    ["Opening Song · A Little Happiness","Lagu Pembuka · A Little Happiness"],
+    ["Shared Story","Cerita Bersama"],
+    ["Friendly PK · Orange Soda","PK Persahabatan · Orange Soda"],
+    ["LIVE","LIVE"],
+    ["watching","menonton"],
+    ["positive","positif"],
+    ["End Copilot","Akhiri Kopilot"],
+    ["CURRENT · 8:18–8:38 PM","SEKARANG · 20.18–20.38"],
+    ["Audience Requests","Permintaan Penonton"],
+    ["“A Little Happiness” + live song requests","“A Little Happiness” + permintaan lagu live"],
+    ["LEFT","TERSISA"],
+    ["STREAMONE AI · DO THIS NOW","STREAMONE AI · LAKUKAN SEKARANG"],
+    ["Cue Used ✓","Saran Dipakai ✓"],
+    ["Welcome the new viewers first.","Sapa penonton baru terlebih dahulu."],
+    ["Say: “If you just joined, what song matches your mood?”","Katakan: “Kalau baru bergabung, lagu apa yang cocok dengan suasana hatimu?”"],
+    ["NEXT","BERIKUTNYA"],
+    ["8:38 PM · Shared Story","20.38 · Cerita Bersama"],
+    ["I’ll alert you 2 minutes early","Saya akan mengingatkan 2 menit sebelumnya"],
+    ["Move Ahead →","Lanjut Sekarang →"],
+    ["SAFETY","KEAMANAN"],
+    ["Ignore private-contact questions.","Abaikan pertanyaan tentang kontak pribadi."],
+    ["Open Guide","Buka Panduan"],
+    ["REAL-TIME VOICE COACH","PELATIH SUARA REAL-TIME"],
+    ["AI is listening for the next adjustment","AI mendengarkan untuk menentukan penyesuaian berikutnya"],
+    ["OFF","NONAKTIF"],
+    ["Start Listening","Mulai Mendengarkan"],
+    ["VOICE CUE","SARAN SUARA"],
+    ["Start listening when you go live.","Mulai mendengarkan saat kamu live."],
+    ["One clear instruction will appear here.","Satu instruksi yang jelas akan muncul di sini."],
+    ["HEARD","TERDENGAR"],
+    ["Waiting for your voice…","Menunggu suaramu…"],
+    ["Microphone access is active only while listening.","Mikrofon hanya aktif saat fitur mendengarkan dinyalakan."],
+    ["Mark Highlight","Tandai Momen Penting"],
+    ["Open Requests","Buka Permintaan Lagu"],
+    ["Safety Guide","Panduan Keamanan"],
+    ["Join Official Community","Gabung Komunitas Resmi"],
+    ["StreamOne Official Creator Community","Komunitas Kreator Resmi StreamOne"],
+    ["Dedicated support · Creator peers · Fast answers","Dukungan khusus · Sesama kreator · Jawaban cepat"],
+    ["Join in One Click","Gabung Sekali Klik"],
+    ["Your creator support team is here","Tim pendukung kreatormu siap membantu"],
+    ["Dedicated Creator Partner","Pendamping Kreator Khusus"],
+    ["Creator Peer Community","Komunitas Sesama Kreator"],
+    ["Priority Support","Dukungan Prioritas"],
+    ["Maybe Later","Nanti Saja"],
+    ["AI-generated demo notice","Pemberitahuan demo buatan AI"],
+    ["AI-Generated Demo","Demo Buatan AI"],
+    ["This page was generated by AI for demonstration and reference only. Some descriptions may be inaccurate or contain errors.","Halaman ini dibuat oleh AI hanya untuk demo dan referensi. Beberapa deskripsi mungkin tidak akurat atau mengandung kesalahan."],
+    ["English","English"],
+    ["Chinese","中文"],
+    ["Bahasa Indonesia","Bahasa Indonesia"]
+  ];
+
   const locales = {
     en: { lang: "en", speech: "en-US" },
     zh: { lang: "zh-CN", speech: "zh-CN" },
     ja: { lang: "ja", speech: "ja-JP" },
-    ko: { lang: "ko", speech: "ko-KR" }
+    ko: { lang: "ko", speech: "ko-KR" },
+    id: { lang: "id", speech: "id-ID" }
   };
   const maps = {
     zh: new Map(zhRows),
     ja: new Map(rows.map((row) => [row[0], row[1]])),
-    ko: new Map(rows.map((row) => [row[0], row[2]]))
+    ko: new Map(rows.map((row) => [row[0], row[2]])),
+    id: new Map(idRows)
   };
   const originalText = new WeakMap();
   const originalAttrs = new WeakMap();
@@ -1219,9 +1410,9 @@ html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto 
     const direct = maps[locale].get(value);
     if (direct) return direct;
     const taskMatch = value.match(/^(\d+) tasks left$/);
-    if (taskMatch) return locale === "zh" ? "还剩 " + taskMatch[1] + " 项任务" : locale === "ja" ? "残り" + taskMatch[1] + "タスク" : "할 일 " + taskMatch[1] + "개";
+    if (taskMatch) return locale === "zh" ? "还剩 " + taskMatch[1] + " 项任务" : locale === "ja" ? "残り" + taskMatch[1] + "タスク" : locale === "ko" ? "할 일 " + taskMatch[1] + "개" : "Tersisa " + taskMatch[1] + " tugas";
     const continueMatch = value.match(/^Continue · (\d+) \/ 3 →$/);
-    if (continueMatch) return locale === "zh" ? "继续 · " + continueMatch[1] + " / 3 →" : locale === "ja" ? "続ける · " + continueMatch[1] + " / 3 →" : "계속 · " + continueMatch[1] + " / 3 →";
+    if (continueMatch) return locale === "zh" ? "继续 · " + continueMatch[1] + " / 3 →" : locale === "ja" ? "続ける · " + continueMatch[1] + " / 3 →" : locale === "ko" ? "계속 · " + continueMatch[1] + " / 3 →" : "Lanjut · " + continueMatch[1] + " / 3 →";
     return value;
   }
 
@@ -1291,7 +1482,7 @@ html[lang="zh-CN"] body{font-family:Inter,"PingFang SC","Microsoft YaHei","Noto 
   let saved = null;
   try { saved = localStorage.getItem("streamone-language"); } catch (_) {}
   const browserLanguage = (navigator.language || "en").toLowerCase();
-  const initial = saved || (browserLanguage.startsWith("zh") ? "zh" : browserLanguage.startsWith("ja") ? "ja" : browserLanguage.startsWith("ko") ? "ko" : "en");
+  const initial = saved || (browserLanguage.startsWith("zh") ? "zh" : browserLanguage.startsWith("ja") ? "ja" : browserLanguage.startsWith("ko") ? "ko" : browserLanguage.startsWith("id") ? "id" : "en");
   document.getElementById("languageSelect").addEventListener("change", (event) => setLanguage(event.target.value));
   setLanguage(initial, false);
 })();
