@@ -23,6 +23,16 @@ test("serves the StreamOne AI manager experience", async () => {
   assert.match(html, />Dance\s*<b>8<\/b>/);
   assert.match(html, />Topics\s*<b>36<\/b>/);
   assert.match(html, /Your always-on growth loop/);
+  assert.match(html, /One Goal · One Plan · One Action/);
+  assert.match(html, /Revenue \/ Live Hour/);
+  assert.match(html, /Content Understanding/);
+  assert.match(html, /Four inputs become one executable plan/);
+  assert.match(html, /SIMILAR CREATOR CASE/);
+  assert.match(html, /ONE PRIORITY · DIAGNOSIS/);
+  assert.match(html, /PK ran 4 minutes too long/);
+  assert.match(html, /NEXT-SHOW VERIFICATION/);
+  assert.match(html, /class="closed-loop-strip"/);
+  assert.doesNotMatch(html, /Change only these 3 things next time/);
   assert.match(html, /Creator Growth/);
   assert.match(html, /Live Copilot/);
   assert.match(html, /James’s personal AI manager/);
@@ -89,6 +99,10 @@ test("serves the five-language localization runtime", async () => {
   assert.match(source, /공식 크리에이터 커뮤니티/);
   assert.match(source, /Manajer AI Pribadi Anda/);
   assert.match(source, /Sapa penonton baru terlebih dahulu/);
+  assert.match(source, /Satu Tujuan · Satu Rencana · Satu Aksi/);
+  assert.match(source, /主播内容经营 OS/);
+  assert.match(source, /クリエイター運営OS/);
+  assert.match(source, /크리에이터 운영 OS/);
   assert.match(source, /speech: "id-ID"/);
   assert.match(source, /zh-CN/);
   assert.match(source, /このページはAIによって生成されたデモです/);
@@ -183,6 +197,10 @@ test("builds a self-contained StreamOne HTML deliverable", async () => {
   assert.match(html, /나만의 AI 매니저/);
   assert.match(html, /Manajer AI Pribadi Anda/);
   assert.match(html, /Live glance mode: minimal information, maximum readability/);
+  assert.match(html, /Creator Operating System adaptation/);
+  assert.match(html, /class="creator-os"/);
+  assert.match(html, /class="prelive-intelligence"/);
+  assert.match(html, /class="panel single-priority"/);
   assert.match(html, /font-size:clamp\(40px,4\.2vw,64px\)!important/);
   assert.match(html, /voice-guidance strong\{display:block;margin:10px 0 8px;font-size:30px/);
   assert.doesNotMatch(html, /<script src="app\/i18n\.js"><\/script>/);
