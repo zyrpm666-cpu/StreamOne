@@ -32,9 +32,9 @@
         <div class="top-actions"><label class="language-picker"><span>Language</span><select id="languageSelect" aria-label="Display language"><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="id">Bahasa Indonesia</option></select></label><button class="soft-button community-entry-button" data-modal="community"><span>♣</span> Join Official Community</button><button class="soft-button voice-entry-button" data-go="live" data-voice-focus><span>🎙</span> Voice Copilot</button><button class="icon-button" id="globalSearchButton" aria-label="Search">⌕</button><button class="icon-button notice" id="noticeButton" aria-label="View notifications">◌<b>3</b></button><button class="primary-button" data-go="prelive">Start Pre-Show Prep <span>→</span></button></div>
       </header>
 
-      <section class="view-page active-view" id="agent">
-        <div class="agent-hero">
-          <div class="agent-orb-wrap">
+      <section class="view-page active-view home-cockpit" id="agent">
+        <div class="cockpit-hero">
+          <div class="cockpit-signal agent-orb-wrap">
             <div class="ai-signal" aria-hidden="true">
               <span class="signal-ring ring-one"></span><span class="signal-ring ring-two"></span><span class="signal-scan"></span>
               <span class="signal-line line-session"></span><span class="signal-line line-audience"></span><span class="signal-line line-strategy"></span>
@@ -43,37 +43,38 @@
             </div>
             <small class="signal-status" role="status" aria-label="StreamOne AI is monitoring in real time"><span><i></i>AI monitoring live signals</span><em>Show · Audience · Strategy</em></small>
           </div>
-          <div class="agent-message"><div class="message-meta"><span class="status-pill"><i></i> AI Manager Online</span><span>Updated just now</span></div><h2>“Don’t pack in more segments tonight.<br />Go deeper on <strong>connection</strong>—that’s how you win.”</h2><p>Across your last three shows, average watch time rose 18% when you moved from a slow song into a personal story. Tonight’s flow is now Chat → Song → Shared Story, with PK capped at 12 minutes.</p><div class="agent-actions"><button class="primary-button" data-go="prelive">View Tonight’s Game Plan <span>→</span></button><button class="soft-button" data-chat-open>Chat with StreamOne AI</button></div></div>
-          <div class="agent-proof"><span>How well StreamOne knows you</span><strong>Day 28</strong><div><b>142</b><small>creator memories</small></div><div><b>12</b><small>shows analyzed</small></div><button data-modal="memory">View AI Memory →</button></div>
+          <div class="cockpit-command agent-message">
+            <div class="message-meta"><span class="status-pill"><i></i> AI Manager Online</span><span>Updated just now</span></div>
+            <h2>“Don’t pack in more segments tonight.<br />Go deeper on <strong>connection</strong>—that’s how you win.”</h2>
+            <p>Across your last three shows, average watch time rose 18% when you moved from a slow song into a personal story. Tonight’s flow is now Chat → Song → Shared Story, with PK capped at 12 minutes.</p>
+            <div class="agent-actions"><button class="primary-button" data-go="prelive">View Tonight’s Game Plan <span>→</span></button><button class="soft-button" data-chat-open>Chat with StreamOne AI</button></div>
+          </div>
+          <aside class="cockpit-north-star" aria-label="North-star performance">
+            <span>NORTH STAR</span><strong>Revenue / Live Hour</strong>
+            <div><b>¥2,860</b><em>↑ 11%</em></div>
+            <dl><div><dt>Returning Viewer Retention</dt><dd>42.8%</dd></div><div><dt>Interaction Density</dt><dd>7.9/min</dd></div><div><dt>Effective Opening</dt><dd>81%</dd></div></dl>
+          </aside>
         </div>
 
-        <section class="creator-os" aria-labelledby="creatorOsTitle">
-          <div class="creator-os-head">
-            <div><span class="section-kicker">STREAMONE · CREATOR OPERATING SYSTEM</span><h3 id="creatorOsTitle">One Goal · One Plan · One Action</h3><p>Every signal is reduced to the next move that improves your business.</p></div>
-            <div class="north-star"><span>NORTH STAR</span><strong>Revenue / Live Hour</strong><b>¥2,860 <em>↑ 11%</em></b></div>
-          </div>
-          <div class="creator-os-flow">
-            <button data-go="growth"><span>ONE GOAL</span><strong>Raise returning-viewer retention</strong><small>Target · 42% → 46%</small></button>
-            <i>→</i>
-            <button data-go="prelive"><span>ONE PLAN</span><strong>Story-led 90-minute show</strong><small>Topic · Script · Visual check</small></button>
-            <i>→</i>
-            <button class="os-action" data-go="prelive"><span>ONE ACTION</span><strong>Cap PK at 12 minutes</strong><small>Then bridge into one shared story</small></button>
-          </div>
-          <div class="engine-rail" aria-label="StreamOne AI engines"><span><b>01</b> Content Understanding</span><span><b>02</b> Diagnosis</span><span><b>03</b> Strategy</span><span><b>04</b> Execution</span><span><b>05</b> Evaluation</span></div>
+        <section class="cockpit-plan" aria-labelledby="creatorOsTitle">
+          <div class="cockpit-plan-title"><span class="section-kicker">STREAMONE · CREATOR OPERATING SYSTEM</span><h3 id="creatorOsTitle">One Goal · One Plan · One Action</h3></div>
+          <button data-go="growth"><span>ONE GOAL</span><strong>Raise returning-viewer retention</strong><small>Target · 42% → 46%</small></button>
+          <i>→</i>
+          <button data-go="prelive"><span>ONE PLAN</span><strong>Story-led 90-minute show</strong><small>Topic · Script · Visual check</small></button>
+          <i>→</i>
+          <button class="plan-action" data-go="prelive"><span>ONE ACTION</span><strong>Cap PK at 12 minutes</strong><small>Then bridge into one shared story</small></button>
         </section>
 
-        <div class="stage-journey"><div class="journey-title"><div><span>STREAMONE AI · WORKFLOW</span><h3>Your always-on growth loop</h3></div><p>Support that starts before you go live—and keeps working after the show ends.</p></div><div class="journey-grid">
-          <button class="journey-step done" data-go="growth"><span>01</span><i>✓</i><strong>Creator Growth</strong><small>Daily practice · Content craft</small><em>1 of 2 done today</em></button>
-          <button class="journey-step current" data-go="prelive"><span>02</span><i>◫</i><strong>Pre-Show Plan</strong><small>Run of show · Warm-up · Safety</small><em>Current stage · 2 tasks left</em></button>
-          <button class="journey-step" data-go="live"><span>03</span><i>●</i><strong>Live Copilot</strong><small>Pacing · Chat · Risk alerts</small><em>Starts tonight at 8:00 PM</em></button>
-          <button class="journey-step" data-go="review"><span>04</span><i>↗</i><strong>Post-Show Review</strong><small>Attribution · Clips · Memory</small><em>Last show rated A</em></button>
-        </div></div>
+        <section class="operating-stages" aria-labelledby="operatingStagesTitle">
+          <div class="operating-stages-head"><div><span class="section-kicker">STREAMONE AI · WORKFLOW</span><h3 id="operatingStagesTitle">Your always-on growth loop</h3></div><p>One priority at each stage. No dashboard noise.</p></div>
+          <div class="operating-stage-grid">
+            <button class="operating-stage" data-go="prelive"><span class="stage-index">01 · PRE-SHOW</span><div class="stage-icon">◎</div><strong>Pre-Show Plan</strong><p>Topic · Script · Similar creator case · Visual check</p><small><b>2 tasks left</b> · Build one executable plan</small><em>Open plan →</em></button>
+            <button class="operating-stage stage-live" data-go="live"><span class="stage-index">02 · LIVE</span><div class="stage-icon">●</div><strong>Welcome the new viewers first.</strong><p>Pacing · Interaction · Gifts · Safety</p><small><b>AI monitoring</b> · Low-interruption prompts</small><em>Enter Live Copilot →</em></button>
+            <button class="operating-stage" data-go="review"><span class="stage-index">03 · POST-SHOW</span><div class="stage-icon">↗</div><strong>PK ran 4 minutes too long</strong><p>One diagnosis · One action · Next-show verification</p><small><b>Next target</b> · Retention above 44%</small><em>Open review →</em></button>
+          </div>
+        </section>
 
-        <div class="dashboard-grid">
-          <article class="panel today-card"><div class="panel-head"><div><span class="section-kicker">NEXT BEST ACTION</span><h3>What StreamOne recommends now</h3></div><span class="time-chip">LIVE IN 03:42:18</span></div><div class="next-action"><div class="action-icon">♫</div><div><span>8-MINUTE FOCUS SESSION</span><h2>Practice the soft entry into the chorus of “A Little Happiness”</h2><p>It’s your first song tonight. Release the tension in the high notes now so the live take feels effortless.</p></div><button class="primary-button" data-go="growth">Start Practice</button></div><div class="today-list"><label><input type="checkbox" checked><span><b>15:30</b> Review yesterday’s community messages</span><em>Done</em></label><label><input type="checkbox"><span><b>18:40</b> Vocal warm-up and chorus practice</span><em>8 min</em></label><label><input type="checkbox"><span><b>19:20</b> Lighting, audio, and PK connection check</span><em>12 min</em></label></div></article>
-          <article class="panel growth-card"><div class="panel-head"><div><span class="section-kicker">GROWTH PULSE</span><h3>You’re building real momentum</h3></div><button class="text-button" data-go="growth">View Growth →</button></div><div class="growth-score"><div><strong>76</strong><small>overall score</small></div><span><b>+6</b> vs. last week</span></div><div class="skill-row"><span>Content Pace</span><div><i style="width:82%"></i></div><b>82</b></div><div class="skill-row"><span>Audience Flow</span><div><i style="width:74%"></i></div><b>74</b></div><div class="skill-row"><span>Emotional Range</span><div><i style="width:79%"></i></div><b>79</b></div><div class="skill-row"><span>Conversion</span><div><i style="width:61%"></i></div><b>61</b></div><p class="growth-note"><span>✦</span><b>This week’s breakthrough:</b> Invite new viewers into the conversation.</p></article>
-        </div>
-        <div class="insight-strip"><div class="insight-icon">✦</div><div><span>STREAMONE AI · OBSERVATION</span><strong>Your strongest connection window is 8:15–8:35 PM</strong><p>When you sing during this window, new-viewer follow rate is 23% above average. I’ll help you protect that slot tonight.</p></div><div class="mini-chart"><i style="height:28%"></i><i style="height:42%"></i><i style="height:58%"></i><i class="hot" style="height:88%"></i><i class="hot" style="height:100%"></i><i style="height:68%"></i><i style="height:54%"></i></div><button data-toast="Insight added to tonight’s run of show">Apply Tonight</button></div>
+        <div class="engine-rail cockpit-engines" aria-label="StreamOne AI engines"><span><b>01</b> Content Understanding</span><span><b>02</b> Diagnosis</span><span><b>03</b> Strategy</span><span><b>04</b> Execution</span><span><b>05</b> Evaluation</span></div>
       </section>
 
       <section class="view-page" id="growth">

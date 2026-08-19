@@ -198,7 +198,10 @@ test("builds a self-contained StreamOne HTML deliverable", async () => {
   assert.match(html, /Manajer AI Pribadi Anda/);
   assert.match(html, /Live glance mode: minimal information, maximum readability/);
   assert.match(html, /Creator Operating System adaptation/);
-  assert.match(html, /class="creator-os"/);
+  assert.match(html, /class="view-page active-view home-cockpit"/);
+  assert.match(html, /class="cockpit-plan"/);
+  assert.match(html, /class="operating-stage-grid"/);
+  assert.match(html, /One priority at each stage\. No dashboard noise\./);
   assert.match(html, /class="prelive-intelligence"/);
   assert.match(html, /class="panel single-priority"/);
   assert.match(html, /font-size:clamp\(40px,4\.2vw,64px\)!important/);

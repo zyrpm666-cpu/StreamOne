@@ -1026,7 +1026,22 @@
     ["Prescribe","処方","처방"],
     ["Add to Plan","計画へ追加","계획에 추가"],
     ["Execute Live","配信で実行","라이브에서 실행"],
-    ["Verify Effect","効果を検証","효과 검증"]
+    ["Verify Effect","効果を検証","효과 검증"],
+    ["One priority at each stage. No dashboard noise.","各段階で優先事項は1つ。ダッシュボードのノイズはありません。","단계마다 우선순위는 하나. 대시보드 소음은 없습니다."],
+    ["01 · PRE-SHOW","01 · 配信前","01 · 방송 전"],
+    ["Topic · Script · Similar creator case · Visual check","話題 · 台本 · 類似クリエイター事例 · 画面チェック","주제 · 대본 · 유사 크리에이터 사례 · 화면 점검"],
+    ["Build one executable plan","1つの実行可能な計画を作成","하나의 실행 가능한 계획 만들기"],
+    ["Open plan →","計画を開く →","계획 열기 →"],
+    ["02 · LIVE","02 · 配信中","02 · 라이브"],
+    ["Pacing · Interaction · Gifts · Safety","進行 · 交流 · ギフト · 安全","진행 · 소통 · 선물 · 안전"],
+    ["AI monitoring","AIモニタリング中","AI 모니터링 중"],
+    ["Low-interruption prompts","低干渉のプロンプト","방해가 적은 프롬프트"],
+    ["Enter Live Copilot →","ライブ・コパイロットへ →","라이브 코파일럿 입장 →"],
+    ["03 · POST-SHOW","03 · 配信後","03 · 방송 후"],
+    ["One diagnosis · One action · Next-show verification","1つの診断 · 1つの行動 · 次回配信で検証","하나의 진단 · 하나의 행동 · 다음 방송 검증"],
+    ["Next target","次の目標","다음 목표"],
+    ["Retention above 44%","維持率44%以上","유지율 44% 이상"],
+    ["Open review →","レビューを開く →","리뷰 열기 →"]
   );
 
   zhRows.push(
@@ -1087,7 +1102,22 @@
     ["Prescribe","行动处方"],
     ["Add to Plan","加入计划"],
     ["Execute Live","直播执行"],
-    ["Verify Effect","效果验证"]
+    ["Verify Effect","效果验证"],
+    ["One priority at each stage. No dashboard noise.","每个阶段只保留一个优先事项，告别信息噪音。"],
+    ["01 · PRE-SHOW","01 · 播前"],
+    ["Topic · Script · Similar creator case · Visual check","话题 · 脚本 · 相似主播案例 · 画面检查"],
+    ["Build one executable plan","生成一套可执行计划"],
+    ["Open plan →","打开计划 →"],
+    ["02 · LIVE","02 · 播中"],
+    ["Pacing · Interaction · Gifts · Safety","节奏 · 互动 · 礼物 · 安全"],
+    ["AI monitoring","AI 实时监控"],
+    ["Low-interruption prompts","低打扰提示"],
+    ["Enter Live Copilot →","进入实时陪播 →"],
+    ["03 · POST-SHOW","03 · 播后"],
+    ["One diagnosis · One action · Next-show verification","一个诊断 · 一个行动 · 下一场验证"],
+    ["Next target","下一目标"],
+    ["Retention above 44%","留存高于 44%"],
+    ["Open review →","打开复盘 →"]
   );
 
   idRows.push(
@@ -1136,7 +1166,22 @@
     ["Prescribe","Resep Aksi"],
     ["Add to Plan","Tambahkan ke Rencana"],
     ["Execute Live","Jalankan Saat Live"],
-    ["Verify Effect","Verifikasi Dampak"]
+    ["Verify Effect","Verifikasi Dampak"],
+    ["One priority at each stage. No dashboard noise.","Satu prioritas di tiap tahap. Tanpa keramaian dashboard."],
+    ["01 · PRE-SHOW","01 · PRA-SIARAN"],
+    ["Topic · Script · Similar creator case · Visual check","Topik · Naskah · Contoh kreator serupa · Pemeriksaan visual"],
+    ["Build one executable plan","Buat satu rencana siap dijalankan"],
+    ["Open plan →","Buka rencana →"],
+    ["02 · LIVE","02 · LIVE"],
+    ["Pacing · Interaction · Gifts · Safety","Tempo · Interaksi · Hadiah · Keamanan"],
+    ["AI monitoring","AI memantau"],
+    ["Low-interruption prompts","Prompt minim gangguan"],
+    ["Enter Live Copilot →","Masuk Kopilot Live →"],
+    ["03 · POST-SHOW","03 · PASCA-SIARAN"],
+    ["One diagnosis · One action · Next-show verification","Satu diagnosis · Satu aksi · Verifikasi siaran berikutnya"],
+    ["Next target","Target berikutnya"],
+    ["Retention above 44%","Retensi di atas 44%"],
+    ["Open review →","Buka ulasan →"]
   );
 
   const locales = {
